@@ -11,9 +11,14 @@ body {
     background: linear-gradient(152deg, rgba(241,240,249,1) 10%, rgba(175,136,228,0.9248074229691877) 100%);
     background-attachment: fixed;
 }
+/* .glob {
+    width: 100%;
+    height: 100%;
+    font-family: 'Noto Serif Display', serif;
+} */
 .header {
     width: 100%;
-    height: 800px;
+    height: 100%;
     font-family: 'Noto Serif Display', serif;
 }
 .header > h1 {
@@ -90,4 +95,70 @@ body {
     text-decoration: none;
     color:  rgb(86,22,111);
     border-bottom: 1px solid rgb(86,22,111);
+}
+input::before{
+    content:"";
+    width: 50px;
+    height: 50px;
+    /* background-color: lightpink; */
+    background: url(./img/кнопкакосмос.gif);
+    position: fixed;
+    top: 15px;
+    right: 0;
+    left: 93%;
+    bottom: 0;
+    border-radius: 100%;
+    background-size: cover;
+}
+input {
+    position: absolute;
+    top: -100px;
+}
+input:checked + .glob  {
+    background: rgb(69,69,69);
+    background: linear-gradient(180deg, rgba(69,69,69,1) 0%, rgba(87,35,83,1) 60%, rgba(77,16,72,1) 100%);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+input:checked + .glob .header h1 {
+    color: white;
+}
+input:checked + .glob .header p {
+    color: white;
+}
+input:checked + .glob .header .box_job .box .conteiner_job {
+    background-color: rgb(141, 92, 159);
+}
+input:checked + .glob .header .box_job {
+    background: rgb(77,16,72);
+    background: linear-gradient(130deg, rgba(77,16,72,1) 0%, rgb(91, 40, 143) 100%);
+}
+input:checked + .glob .header .box_job2 .box2 .conteiner_job2 {
+    background-color: rgb(141, 92, 159);
+}
+input:checked + .glob .header .box_job2 {
+    background: rgb(77,16,72);
+    background: linear-gradient(130deg, rgba(77,16,72,1) 0%, rgb(91, 40, 143) 100%);
+}
+input:checked + .glob .header .box_job2 .box2 .conteiner_job2 h3{
+    color: white;
+}
+input:checked + .glob .header .box_job .box .conteiner_job h3{
+    color: white;
+}
+@media screen and (max-width:1030px){
+    .box_job {
+        width: 100%;
+        height: 50%;
+    }
+    .box_job2 {
+        width: 100%;
+        height: 50%;
+    }
+    .box {
+        width:100%;
+    }
+    .box2 {
+        width:100%;
+    }
 }
