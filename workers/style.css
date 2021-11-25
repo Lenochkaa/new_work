@@ -11,11 +11,9 @@ body {
     background: linear-gradient(152deg, rgba(241,240,249,1) 10%, rgba(175,136,228,0.9248074229691877) 100%);
     background-attachment: fixed;
 }
-/* .glob {
-    width: 100%;
-    height: 100%;
-    font-family: 'Noto Serif Display', serif;
-} */
+.glob {
+    padding-bottom: 20px;
+}
 .header {
     width: 100%;
     height: 100%;
@@ -43,7 +41,7 @@ body {
     width: 70%;
     height: 500px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    
     /* background: rgb(238,208,238);
     background: radial-gradient(circle, rgba(238,208,238,0.82) 13%, rgba(200,133,200,0.72) 94%); */
     background: rgb(196,125,196);
@@ -146,7 +144,7 @@ input:checked + .glob .header .box_job2 .box2 .conteiner_job2 h3{
 input:checked + .glob .header .box_job .box .conteiner_job h3{
     color: white;
 }
-@media screen and (max-width:1030px){
+@media screen and (max-width: 1030px){
     .box_job {
         width: 100%;
         height: 50%;
